@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Alba Montoya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        .header img {
+            max-width: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .contact-info {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-item i {
+            margin-right: 15px;
+            font-size: 1.5rem;
+            color: #343a40;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .action-buttons button {
+            margin: 5px 0;
+            font-size: 1rem;
+            padding: 10px;
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .action-buttons button:hover {
+            background-color: #495057;
+        }
+
+        #map-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .action-buttons {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .action-buttons button {
+                flex: 1;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.jpg" alt="Logo">
+    <h1>Alba Montoya</h1>
+</div>
+
+<div class="contact-info container">
+    <div class="action-buttons">
+        <button class="btn" onclick="window.location.href='tel:2294587084'"><i class="fas fa-phone-alt"></i> LLAMAR</button>
+        <button class="btn" onclick="window.location.href='mailto:amontoya@tendsagroup.com'"><i class="fas fa-envelope"></i> EMAIL</button>
+        <button class="btn" onclick="window.location.href='https://www.google.com/maps/search/?api=1&query=Águilas+558,+Veracruz,+Veracruz+91790,+México'"><i class="fas fa-map-marker-alt"></i> DIRECCIONES</button>
+        <button class="btn" onclick="toggleMap()"><i class="fas fa-map"></i> MOSTRAR MAPA</button>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+            <strong>Móvil:</strong> 2294587084
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+            <strong>Teléfono:</strong> 2291951257 ext 605
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+            <strong>Teléfono:</strong> 2291951258 ext 605
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+            <strong>Email:</strong> amontoya@tendsagroup.com
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-briefcase"></i>
+        <div>
+            <strong>Empresa:</strong> TENDSAGROUP
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+            <strong>Dirección:</strong> Águilas 558, Veracruz, Veracruz 91790, México
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-globe"></i>
+        <div>
+            <strong>Web:</strong> <a href="https://www.tendsagroup.com">www.tendsagroup.com</a>
+        </div>
+    </div>
+
+    <!-- Contenedor del Mapa -->
+    <div id="map-container" class="container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.748723994649!2d-96.14857872330968!3d19.17102485441705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c341c537b22a81%3A0x3a062f2eaedb1d87!2s%C3%81guilas%20558%2C%2091790%20Veracruz%2C%20Ver.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1693935013777!5m2!1ses!2sus" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; TEND S.A. de C.V. - Todos los derechos reservados
+</div>
+
+<script>
+    function toggleMap() {
+        const mapContainer = document.getElementById('map-container');
+        mapContainer.style.display = mapContainer.style.display === 'none' || mapContainer.style.display === '' ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

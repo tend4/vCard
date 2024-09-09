@@ -1,0 +1,16 @@
+# Contenido de la vCard simplificada
+vcard_content = """
+BEGIN:VCARD
+VERSION:4.0
+FN:Luis Juarez
+N:Juarez;Luis
+ORG:Tend
+TITLE:Gerente
+TEL;CELL:+522292419030
+TEL;WORK:+522291951257
+TEL;WORK:+522291951258
+EMAIL:ajuarez@tendsagroup.com
+ADR;WORK:;;Calle Ejemplo 123;Ciudad;Estado;Código Postal;México
+URL:http://tendsa.com.mx
+END:VCARD
+"""
